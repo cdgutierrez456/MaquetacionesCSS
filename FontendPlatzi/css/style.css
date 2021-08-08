@@ -1,18 +1,22 @@
 body {
     margin: 0;
-    background: #ab88ff;
+    background: #6134CB;
+    font-family: 'Mulish', sans-serif;
 }
 
 .header {
-    background: #ab88ff;
+    background: #6134CB;
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__img {
     width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
 }
 
 .header__menu {
@@ -20,7 +24,7 @@ body {
 }
 
 .header__menu ul {
-    /* display: none; */
+    display: none;
     list-style: none;
     padding: 0;
     position: absolute;
@@ -29,8 +33,36 @@ body {
     margin: 0 0 0 -14px;
 }
 
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+.header__menu li {
+    margin: 10px 0;
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+}
+
 .header__menu--profile {
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
     width: 40px;
+}
+
+.header__menu--profile p {
+    margin: 0;
+    color: white;
 }
 
